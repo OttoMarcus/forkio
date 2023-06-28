@@ -32,29 +32,29 @@ const distPath = "dist/";
 const path = {
     build: {
         html: distPath,
-        css: distPath + "assets/css/",
-        js: distPath + "assets/js/",
-        images: distPath + "assets/images/",
-        fonts: distPath + "assets/fonts/"
+        css: distPath + "css/",
+        js: distPath + "js/",
+        images: distPath + "images/",
+        fonts: distPath + "fonts/"
     },
     src: {
-        html: srcPath + "*.html",
-        css: srcPath + "assets/scss/*.scss",
-        js: srcPath + "assets/js/*.js",
-        images: srcPath + "assets/images/**/*.{jpg,png,svg,pdf,gif,ico,webp,xml,json,webmanifest,webp}",
+        html: srcPath + "html/*.html",
+        css: srcPath + "scss/**/*.scss",
+        js: srcPath + "js/*.js",
+        images: srcPath + "images/**/*.{jpg,png,svg,pdf,gif,ico,webp,xml,json,webmanifest,webp}",
         fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
     watch: {
-        html: srcPath + "**/*.html",
-        css: srcPath + "assets/scss/**/*.scss",
-        js: srcPath + "assets/js/**/*.js",
-        images: srcPath + "assets/images/**/*.{jpg,png,svg,pdf,gif,ico,webp,xml,json,webmanifest,webp}",
-        fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        html: srcPath + "html/*.html",
+        css: srcPath + "scss/**/*.scss",
+        js: srcPath + "js/*.js",
+        images: srcPath + "images/**/*.{jpg,png,svg,pdf,gif,ico,webp,xml,json,webmanifest,webp}",
+        fonts: srcPath + "fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
     clean: "./" + distPath
 }
 
-function serv() {
+function serve() {
     browserSync.init({
         server: {
             baseDir: "./" + distPath
@@ -64,19 +64,14 @@ function serv() {
 
 function html() {
     panini.refresh()
-    return src(path.src.html, {base: srcPath})
+    return src(path.src.html, {base: srcPath + "html/"})
         .pipe(plumber())
-        .pipe(panini({
-            root: srcPath,
-            layouts: srcPath + "templates/layouts/",
-            partials: srcPath + "templates/partials/"
-        }))
         .pipe(dest(path.build.html))
         .pipe(browserSync.reload({stream:true}))
 }
 
 function css() {
-    return src(path.src.css, {base: srcPath + "assets/scss/"}) 
+    return src(path.src.css, {base: srcPath + "scss/"})
         .pipe(plumber({
             errorHandler: function(err) {
                 notify.onError({
@@ -112,7 +107,7 @@ function css() {
 }
 
 function js () {
-    return src(path.src.js, {base: srcPath + "assets/js/"}) 
+    return src(path.src.js, {base: srcPath + "js/"})
     .pipe(plumber({
         errorHandler: function(err) {
             notify.onError({
@@ -137,7 +132,7 @@ function js () {
 }
 
 function images () {
-    return src(path.src.images, {base: srcPath + "assets/images/"}) 
+    return src(path.src.images, {base: srcPath + "images/"})
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.mozjpeg({quality: 80, progressive: true}),
@@ -153,12 +148,12 @@ function images () {
     .pipe(browserSync.reload({stream:true}))
 }
 
-function clean () {
+function clean() {
     return del(path.clean)
 }
 
 function fonts () {
-    return src(path.src.fonts, {base: srcPath + "assets/fonts/"}) 
+    return src(path.src.fonts, {base: srcPath + "fonts/"})
     .pipe(browserSync.reload({stream:true}))
 }
 
@@ -171,7 +166,7 @@ function watchFiles() {
 }
 
 const build = gulp.series(clean, gulp.parallel(html,css,js,images,fonts))
-const watch = gulp.parallel(build, watchFiles, serv)
+const watch = gulp.series(build, watchFiles, serve)
 
 
 exports.html = html;
