@@ -1,4 +1,29 @@
-@import "components/variables";
+@import "../components/variables";
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    //max-width: 1380px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    //padding: 30px 0;
+    //background-color: #010005;
+}
+.header-body{
+    max-width: 1200px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 6%;
+    z-index: 2;
+    background-color: $back-header;
+    display: flex;
+
+}
 
 .logo {
     width: 43px;
@@ -9,7 +34,8 @@
 .header-logo-container {
     display: flex;
     align-items: center;
-    max-width: min-content;
+    max-width: 1200px;
+    width: auto;
     height:auto;
 }
 

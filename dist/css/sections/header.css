@@ -1,5 +1,53 @@
+.header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-body {
+    max-width: 1200px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 6%;
+    z-index: 2;
+    background-color: #010005;
+    display: flex;
+}
+
 .logo {
     width: 43px;
     height: 41px;
     background-image: url("../images/pictograms/Logo.png");
+}
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: auto;
+    height: auto;
+}
+
+.header-logo-container:hover .logo-name {
+    color: #fff;
+}
+
+.header-logo-container:hover .logo {
+    background-image: url("../images/pictograms/logo-on-hover.png");
+}
+
+.logo-name {
+    display: inline-block;
+    color: #8D81AC;
+    font-size: 24px;
+    font-family: Lato, serif;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
 }
