@@ -55,12 +55,14 @@
 
 // ------------------------ REVOLUTIONARY section  --------------------
 .revolutionary {
-    width: 60em;
+    max-width: 1200px;
     height: 20em;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .revolutionary__title {
@@ -70,6 +72,7 @@
     font-size: 26px;
     line-height: 28px;
     text-transform: uppercase;
+
 }
 
 .revolutionary__paragraph {
@@ -101,6 +104,10 @@
     line-height: 20px;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .revolutionary__btns_counter {
@@ -116,10 +123,25 @@
     position: absolute;
     top: -1px;
     right: -47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
- 
 // ------------------------ HERE IS WHAT YOU GET section------------------------
+.here-is-what-you-get {
+    max-width: 1200px;   
+}    
+
+.here-is-what-you-get__title {
+    color: #8D81AC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}    
+
 
 // ----------------------- TALKING ABOUT section ----------------------
 
