@@ -4,25 +4,22 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    //max-width: 1380px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
-    //padding: 30px 0;
-    //background-color: #010005;
 }
 .header-body{
     max-width: 1200px;
     width: 100%;
     height: 100px;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     padding: 0 6%;
     z-index: 2;
     background-color: $back-header;
     display: flex;
-
 }
 
 .logo {
@@ -56,3 +53,21 @@
     line-height: 16px;
     text-transform: uppercase;
 }
+
+.header-menu-container{
+    display: flex;
+
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: $font-color;
+    font-size: 26px;
+    //font-family: Montserrat;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
