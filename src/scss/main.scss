@@ -5,25 +5,12 @@
 @import "sections/header";
 @import "sections/footer";
 
+@import "media_query/under320";
 @import "media_query/mobile";
 @import "media_query/tablet";
 @import "media_query/desktop";
 
-
-.header-logo-container {
-    display: flex;
-    align-items: center;
-    width: auto;
-    height:auto;
-}
-
-.logo-name {
-    color: $font-color;
-    font-size: 24px;
-    font-family: Lato;
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase;
-}
-
+//.wrapper{
+//  background-color: #3D3D3D;
+//}
 

@@ -3,3 +3,28 @@
     height: 41px;
     background-image: url("../images/pictograms/Logo.png");
 }
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    max-width: min-content;
+    height:auto;
+}
+
+.header-logo-container:hover  .logo-name{
+    color: $font-hover;
+}
+
+.header-logo-container:hover  .logo{
+        background-image: url("../images/pictograms/logo-on-hover.png");
+    }
+
+.logo-name {
+    display: inline-block;
+    color: $font-color;
+    font-size: 24px;
+    font-family: Lato, serif;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
