@@ -1,3 +1,4 @@
+@import "../components/variables";
 @media only screen and (min-width: 993px) {
 
     //----------------------- HEADER ------------------------------
@@ -7,9 +8,35 @@
     }
     .header-body {
 
-
     }
 
+    .header-body{
+        max-width: 1200px;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 6%;
+        z-index: 2;
+        background-color: $back-header;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: $font-color;
+        font-size: 16px;
+        //font-family: Montserrat;
+        font-weight: 700;
+        line-height: 17px;
+        justify-content: space-between;
+        align-items: center;
+        width: 44%;
+    }
 
     //----------------------- FORK-UP -----------------------------
     .fork-title{

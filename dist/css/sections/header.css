@@ -8,23 +8,10 @@
     z-index: 10;
 }
 
-.header-body {
-    max-width: 1200px;
-    width: 100%;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding: 0 6%;
-    z-index: 2;
-    background-color: #010005;
-    display: flex;
-}
-
 .logo {
     width: 43px;
     height: 41px;
-    background-image: url("../images/pictograms/Logo.png");
+    background-image: url("../images/pictograms/logo.png");
 }
 
 .header-logo-container {
@@ -37,10 +24,12 @@
 
 .header-logo-container:hover .logo-name {
     color: #fff;
+    transition: all 0.3s ease 0s;
 }
 
 .header-logo-container:hover .logo {
     background-image: url("../images/pictograms/logo-on-hover.png");
+    transition: all 0.2s ease 0s;
 }
 
 .logo-name {
@@ -55,14 +44,11 @@
 
 .header-menu-container {
     display: flex;
+    width: 90%;
+    justify-content: space-between;
 }
 
-.menu-list {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    color: #8D81AC;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 26px;
+.menu-item:hover {
+    color: #fff;
+    transition: all 0.3s ease 0s;
 }

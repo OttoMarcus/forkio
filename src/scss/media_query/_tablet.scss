@@ -1,9 +1,39 @@
+@import "../components/variables";
 @media only screen and (min-width: 481px) and (max-width: 992px) {
 
     //----------------------- HEADER ------------------------------
     .logo {
         margin-right: 17px;
     }
+    .header-body{
+        //max-width: 1200px;
+        width: 100%;
+        height: 118px;
+        align-items: center;
+        //justify-content: space-between;
+        position: relative;
+        padding: 0 6%;
+        z-index: 2;
+        background-color: $header-tablet-background;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-decoration: none;
+        color: $font-color;
+        font-size: 16px;
+        //font-family: Montserrat;
+        font-weight: 700;
+        line-height: 18px;
+        justify-content: space-between;
+        align-items: center;
+        width: 67%;
+    }
+
 
 
     //----------------------- FORK-UP -----------------------------
