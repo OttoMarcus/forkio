@@ -30,8 +30,8 @@
 .header-logo-container {
     display: flex;
     align-items: center;
-    max-width: 1200px;
-    width: auto;
+    max-width: -moz-min-content;
+    max-width: min-content;
     height: auto;
 }
 
