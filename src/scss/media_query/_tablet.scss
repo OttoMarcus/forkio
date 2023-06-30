@@ -5,8 +5,17 @@
     .logo {
         margin-right: 17px;
     }
+
+    //.header-body:before {
+    //    content: "";
+    //    width: 100%;
+
+    //    background-color: $header-tablet-background;
+    //    position: absolute;
+    //    z-index: 1;
+    //}
+
     .header-body{
-        //max-width: 1200px;
         width: 100%;
         height: 118px;
         align-items: center;
@@ -14,15 +23,13 @@
         position: relative;
         padding: 0 6%;
         z-index: 2;
-        background-color: $header-tablet-background;
+
         display: flex;
         flex-direction: row;
     }
 
     .menu-list {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         text-decoration: none;
         color: $font-color;
         font-size: 16px;
@@ -32,6 +39,14 @@
         justify-content: space-between;
         align-items: center;
         width: 67%;
+
+
+        position: absolute;
+        top: 85px;
+        left: 20%;
+    }
+    .header-menu-container {
+        flex-direction: column;
     }
 
 

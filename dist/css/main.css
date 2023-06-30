@@ -99,7 +99,7 @@ a {
 
 .header-menu-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -159,15 +159,12 @@ a {
         position: relative;
         padding: 0 6%;
         z-index: 2;
-        background-color: #27262A;
         display: flex;
         flex-direction: row;
     }
 
     .menu-list {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         text-decoration: none;
         color: #8D81AC;
         font-size: 16px;
@@ -176,6 +173,13 @@ a {
         justify-content: space-between;
         align-items: center;
         width: 67%;
+        position: absolute;
+        top: 85px;
+        left: 20%;
+    }
+
+    .header-menu-container {
+        flex-direction: column;
     }
 
     .fork-title {
@@ -228,7 +232,7 @@ a {
         line-height: 17px;
         justify-content: space-between;
         align-items: center;
-        width: 44%;
+        width: 40%;
     }
 
     .fork-title {
