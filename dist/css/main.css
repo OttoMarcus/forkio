@@ -54,7 +54,26 @@ a {
 }
 
 .header {
-    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-body {
+    max-width: 1200px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 6%;
+    z-index: 2;
+    background-color: #010005;
+    display: flex;
 }
 
 .logo {
@@ -66,8 +85,8 @@ a {
 .header-logo-container {
     display: flex;
     align-items: center;
-    max-width: -moz-min-content;
-    max-width: min-content;
+    max-width: 1200px;
+    width: auto;
     height: auto;
 }
 
@@ -89,6 +108,20 @@ a {
     text-transform: uppercase;
 }
 
+.header-menu-container {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #8D81AC;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 @media only screen and (max-width: 319px) {
     .wrapper {
         background-color: black;
@@ -106,17 +139,77 @@ a {
     .logo-name {
         display: none;
     }
+
+    .fork-title {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 42px;
+        margin: 153px 0 20px 0;
+    }
+
+    .fork-subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 14px;
+    }
+
+    .fork-version {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        margin-bottom: 460px;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 992px) {
     .logo {
         margin-right: 17px;
     }
+
+    .fork-title {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 72px;
+        margin: 170px 0 20px 0;
+    }
+
+    .fork-subtitle {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 19px;
+    }
+
+    .fork-version {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        margin-bottom: 460px;
+    }
 }
 
 @media only screen and (min-width: 993px) {
     .logo {
         margin-right: 17px;
+    }
+
+    .fork-title {
+        font-size: 82px;
+        font-weight: 700;
+        line-height: 82px;
+        margin: 170px 0 20px 0;
+    }
+
+    .fork-subtitle {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 19px;
+    }
+
+    .fork-version {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 460px;
     }
 }
 
@@ -125,12 +218,10 @@ a {
     height: 100%;
     margin: 0 auto;
     position: relative;
-    border: 2px solid rgb(109, 27, 27);
 }
 
 .container {
     max-width: 1200px;
-    border: 2px solid rgb(182, 94, 160);
     margin: 0 6%;
 }
 
@@ -140,7 +231,7 @@ a {
     justify-content: center;
 }
 
-.fork-up {
+.fork-background {
     background-image: url("../images/background/forkApp.png");
     width: 100%;
     height: 800px;
@@ -153,6 +244,29 @@ a {
     z-index: -1;
 }
 
+.fork-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .fork-title {
+    color: #fff;
+    font-weight: 700;
+}
+
+.fork-subtitle {
+    color: #8D81AC;
+    font-weight: 400;
+}
+
+.fork-version {
+    color: #848E97;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+a.fork-version:hover {
     color: #fff;
 }
