@@ -300,6 +300,7 @@ a.fork-version:hover {
     font-size: 26px;
     line-height: 28px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .revolutionary__paragraph {
@@ -310,18 +311,39 @@ a.fork-version:hover {
     line-height: 20px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .revolutionary__btns {
-    width: 27em;
-    height: 26px;
+    width: 90%;
+    height: 30%;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.watch {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+}
+
+.star {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+
+.fork {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
 }
 
 .revolutionary__btns_button {
-    width: 80px;
-    height: 26px;
+    width: 33.3333%;
+    height: 30%;
     background-color: #F1F1F1;
     border-radius: 3px;
     border: 1px solid #D5D5D5;
@@ -329,17 +351,15 @@ a.fork-version:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 20px;
-    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-evenly;
 }
 
 .revolutionary__btns_counter {
-    width: 45px;
-    height: 100%;
+    width: 45%;
+    height: 98%;
     background-color: #FFFFFF;
     border-radius: 3px;
     border: 1px solid #D5D5D5;
@@ -348,12 +368,43 @@ a.fork-version:hover {
     font-size: 14px;
     line-height: 20px;
     position: absolute;
-    top: -1px;
-    right: -47px;
+    top: 0;
+    right: -47%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .revolutionary__btns {
+        width: 90%;
+        height: 25%;
+        position: relative;
+    }
+
+    .revolutionary__btns_button {
+        width: 22.3333%;
+        height: 41%;
+    }
+
+    .watch {
+        position: absolute;
+        top: 19%;
+        left: 0%;
+    }
+
+    .star {
+        position: absolute;
+        top: 20%;
+        right: 44%;
+    }
+
+    .fork {
+        position: absolute;
+        bottom: 38%;
+        left: 67%;
+    }
 }
 
 .here-is-what-you-get {
