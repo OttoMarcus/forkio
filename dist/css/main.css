@@ -317,10 +317,10 @@ a.fork-version:hover {
 .revolutionary__btns {
     width: 90%;
     height: 30%;
-    justify-content: space-evenly;
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .watch {
@@ -374,6 +374,37 @@ a.fork-version:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .revolutionary__btns {
+        width: 90%;
+        height: 25%;
+        position: relative;
+    }
+
+    .revolutionary__btns_button {
+        width: 22.3333%;
+        height: 41%;
+    }
+
+    .watch {
+        position: absolute;
+        top: 19%;
+        left: 0%;
+    }
+
+    .star {
+        position: absolute;
+        top: 20%;
+        right: 44%;
+    }
+
+    .fork {
+        position: absolute;
+        bottom: 38%;
+        left: 67%;
+    }
 }
 
 .here-is-what-you-get {
