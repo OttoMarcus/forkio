@@ -1,0 +1,29 @@
+@mixin button {
+    // background-color: $font-color;
+    background-image: linear-gradient(1deg, $font-color, $font-version 99%);
+color: $font-hover;
+text-align: center;
+// font-family: Montserrat;
+font-weight: 700;
+border-radius: 40px;
+border: 1px solid #685499;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+display: inline-flex;
+box-sizing: border-box;
+position: relative;
+touch-action: manipulation;
+transition: all .2s ease 0s;
+}
+
+@mixin buyNow {
+    width: 145px;
+    height: 38px;
+}
+
+@mixin download {
+    width: 390px;
+    height: 62px;
+}

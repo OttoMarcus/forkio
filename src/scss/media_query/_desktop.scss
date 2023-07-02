@@ -19,16 +19,32 @@
     }
 
     .navi-list {
-        //flex-direction: row;
-
         justify-content: space-between;
-
         width: 45%;
-        //
-        //position: absolute;
-        //top: 45px;
-        //left: 43%;
     }
+
+    .oval-purple-button {
+        @include button;
+        @include buyNow;
+    }
+
+
+    .oval-purple-button:active,
+    .oval-purple-button:focus {
+    outline: none;
+    }
+
+    .oval-purple-button:hover {
+    background: $font-hover;
+    color: $font-color;
+    }
+
+    .download{
+        @include button;
+        @include download;
+    }
+
+
 
     //----------------------- FORK-UP -----------------------------
     .fork-title{

@@ -1,4 +1,5 @@
 @import "../components/variables";
+@import "../components/mixins";
 
 .header {
     display: flex;
@@ -10,6 +11,21 @@
     z-index: 10;
 }
 
+.header-body{
+    //display: flex;
+    max-width: 1380px;
+    width: 100%;
+    min-height: 100px;
+    //z-index: 2;
+    position: relative;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
     width: 43px;
@@ -17,20 +33,22 @@
     background-image: url("../images/pictograms/logo.png");
 }
 
-.header-logo-container {
+.header-logo-box {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     max-width: min-content;
     height:auto;
 }
 
-.header-logo-container:hover  .logo-name{
+.header-logo-box:hover  .logo-name{
     color: $font-hover;
     transition: all .3s ease 0s;
 }
 
-.header-logo-container:hover  .logo{
-        background-image: url("../images/pictograms/logo-on-hover.png");
+.header-logo-box:hover  .logo{
+    background-image: url("../images/pictograms/logo-on-hover.png");
     transition: all .2s ease 0s;
     }
 
@@ -44,17 +62,35 @@
     text-transform: uppercase;
 }
 
-.header-menu-container{
+// .header-menu-container{
+//     display: flex;
+//     width: 100%;
+//     justify-content: space-between;
+
+// }
+.navi-list {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    //flex-wrap: wrap;
+    text-decoration: none;
+    color: $font-color;
+    font-size: 16px;
+    //font-family: Montserrat;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 0 5.6% 0 auto;
+    align-items: center;
+    overflow: auto;
+}
+
+.navi-item {
+    color: $font-color;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 
 
-
-.menu-item:hover  {
+.navi-item:hover  {
     color: $font-hover;
     transition: all .3s ease 0s;
 }

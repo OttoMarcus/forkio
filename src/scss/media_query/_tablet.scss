@@ -1,3 +1,4 @@
+@import "../components/mixins";
 @import "../components/variables";
 @media only screen and (min-width: 481px) and (max-width: 992px) {
 
@@ -22,15 +23,6 @@
     .logo-navi {
         margin-top: 20px;
     }
-
-    //.header-body:before {
-    //    content: "";
-    //    width: 100%;
-
-    //    background-color: $header-tablet-background;
-    //    position: absolute;
-    //    z-index: 1;
-    //}
 
     .header-body{
         width: 100%;
@@ -57,15 +49,20 @@
         //font-family: Montserrat;
         font-weight: 700;
         line-height: 18px;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: start;
-        width: 55%;
+        width: 80%;
         position: absolute;
         top: 75px;
-        left: 22%;
+        left: 10%;
     }
 
-
+    .oval-purple-button {
+        @include button;
+        width: 145px;
+        height: 38px;
+   
+    }
 
     //----------------------- FORK-UP -----------------------------
     .fork-title{
