@@ -13,31 +13,77 @@
     max-width: 1380px;
     height: 100%;
     margin: 0 auto;
-    position: relative;
 }
 
 .container{
-    max-width: 1200px;
-    //border: 2px solid rgb(80, 206, 153);
-    //height: 100%;
-    margin: 0 6%;
-    height: 100%;
+     margin: 0 auto;
+     max-width: 1200px;
+
+}
+
+.header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.header-body{
+    //display: flex;
+    max-width: 1380px;
+    width: 100%;
+    min-height: 100px;
+    //z-index: 2;
+    position: relative;
+
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+}
+
+.header-logo-box {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
+.navi-list {
+    display: flex;
+    text-decoration: none;
+    color: $font-color;
+    font-size: 16px;
+    //font-family: Montserrat;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 0 5.6% 0 auto;
+    align-items: center;
+    overflow: auto;
+}
 
+.navi-item {
+    color: $font-color;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
 // -----------------------  MAIN ----------------------------------
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.menu-item {
-    color: $font-color;
-    font-size: 16px;
-    font-weight: 700;
 }
 
 
@@ -45,9 +91,10 @@
 .fork-background {
     background-image: url("../images/background/forkApp.png");
     width: 100%;
+    max-width: 1380px;
     height: 800px;
     top: 0;
-    left: 0;
+    //left: 0;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,9 +135,9 @@ a.fork-version:hover{
 
 // ------------------------ REVOLUTIONARY section  --------------------
 .revolutionary {
-    max-width: 1200px;
+    //max-width: 1200px;
     height: 20em;
-    padding: 2%;
+    //padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -163,9 +210,9 @@ a.fork-version:hover{
 }
 
 // ------------------------ HERE IS WHAT YOU GET section------------------------
-.here-is-what-you-get {
-    max-width: 1200px;   
-}    
+//.here-is-what-you-get {
+//    max-width: 1200px;
+//}
 
 .here-is-what-you-get__title {
     color: #8D81AC;

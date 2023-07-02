@@ -3,39 +3,27 @@
 
     //----------------------- HEADER ------------------------------
 
+    .container {
+        padding: 0 6.5%;
+    }
+    .header-body {
+        background-color: $back-header;
+    }
+
+    .header-menu {
+        padding-top: 30px;
+    }
+
     .logo {
         margin-right: 17px;
     }
-    .header-body {
 
-    }
+    .navi-list {
+        //flex-direction: row;
 
-    .header-body{
-        max-width: 1200px;
-        width: 100%;
-        height: 100px;
-        align-items: center;
         justify-content: space-between;
-        position: relative;
-        padding: 0 6%;
-        z-index: 2;
-        background-color: $back-header;
-        display: flex;
-        flex-direction: row;
-    }
 
-    .menu-list {
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        color: $font-color;
-        font-size: 16px;
-        //font-family: Montserrat;
-        font-weight: 700;
-        line-height: 17px;
-        justify-content: space-between;
-        align-items: center;
-        width: 40%;
+        width: 45%;
         //
         //position: absolute;
         //top: 45px;

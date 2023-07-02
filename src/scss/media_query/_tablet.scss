@@ -2,8 +2,25 @@
 @media only screen and (min-width: 481px) and (max-width: 992px) {
 
     //----------------------- HEADER ------------------------------
+    .container{
+        padding: 0 20px;
+    }
+
+    .header-menu
+    {
+        display: flex;
+        justify-content: space-between;
+        //width: 100%;
+        padding-top: 20px;
+
+    }
+
     .logo {
         margin-right: 17px;
+    }
+
+    .logo-navi {
+        margin-top: 20px;
     }
 
     //.header-body:before {
@@ -17,18 +34,22 @@
 
     .header-body{
         width: 100%;
-        height: 118px;
-        align-items: center;
+        //height: 118px;
+        align-items: start;
         //justify-content: space-between;
-        position: relative;
-        padding: 0 6%;
-        z-index: 2;
+        background-color:  $header-tablet-background;
+        padding: 0 0 18px 0;
+        //z-index: 2;
+        //display: flex;
+        //flex-direction: row;
 
-        display: flex;
-        flex-direction: row;
     }
 
-    .menu-list {
+    .header-menu {
+        margin-top: 30px;
+    }
+
+    .navi-list {
         display: flex;
         text-decoration: none;
         color: $font-color;
@@ -37,16 +58,11 @@
         font-weight: 700;
         line-height: 18px;
         justify-content: space-between;
-        align-items: center;
-        width: 67%;
-
-
+        align-items: start;
+        width: 55%;
         position: absolute;
-        top: 85px;
-        left: 20%;
-    }
-    .header-menu-container {
-        flex-direction: column;
+        top: 75px;
+        left: 22%;
     }
 
 
