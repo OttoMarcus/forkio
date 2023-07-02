@@ -17,28 +17,16 @@
 }
 
 .container{
-    max-width: 1200px;
-    //border: 2px solid rgb(80, 206, 153);
-    //height: 100%;
-    margin: 0 6%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+     margin: 0 auto;
+     max-width: 1200px;
 
+}
 
 // -----------------------  MAIN ----------------------------------
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 800px;
-}
-.menu-item {
-    color: $font-color;
-    font-size: 16px;
-    font-weight: 700;
 }
 
 
@@ -46,9 +34,9 @@
 .fork-background {
     background-image: url("../images/background/forkApp.png");
     width: 100%;
+    max-width: 1380px;
     height: 800px;
     top: 0;
-    left: 0;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,23 +48,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+    height: 800px;
+    position: relative;
 }
 
 .fork-title{
     color: $font-hover;
-    //font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+
 .fork-subtitle{
     color: $font-color;
-    //font-family: Lato;
+    font-family: Lato, sans-serif;
     font-weight: 400;
-
+    text-align: center;
+    text-transform: capitalize;
 }
+
 .fork-version{
     color: $font-version;
     text-align: center;
-    //font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -85,18 +79,39 @@ a.fork-version:hover{
     color: $font-hover;
 }
 
+.download {
+    position: absolute;
+    bottom: -31px;
+}
 
+.download:active,
+.download:focus,
+.buy:active,
+.buy:focus {
+    outline: none;
+}
 
 // ------------------------ REVOLUTIONARY section  --------------------
 .revolutionary {
-    max-width: 1200px;
+    width: 100%;
     height: 20em;
-    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.unlimited {
+    margin: 50px 0 65px 0;
+
+    color: $font-version;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 15px;
 }
 
 .revolutionary__title {
@@ -110,7 +125,7 @@ a.fork-version:hover{
 }
 
 .revolutionary__paragraph {
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 400;
     color: #323232;
     font-size: 14px;
@@ -220,7 +235,7 @@ a.fork-version:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-}    
+}
 
 .here-is-what-you-get__title {
     color: #8D81AC;
@@ -229,7 +244,7 @@ a.fork-version:hover{
     font-size: 32px;
     line-height: 37px;
     margin-bottom: 20px;
-}    
+}
 
 .here-is-what-you-get__item img {
     margin-bottom: 15px;
