@@ -16,7 +16,7 @@
     max-width: 1380px;
     width: 100%;
     min-height: 100px;
-    //z-index: 2;
+    z-index: 2;
     position: relative;
 }
 
@@ -56,29 +56,25 @@
     display: inline-block;
     color: $font-color;
     font-size: 24px;
-    font-family: Lato, serif;
+    font-family: Lato, sans-serif;
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
+
 }
 
-// .header-menu-container{
-//     display: flex;
-//     width: 100%;
-//     justify-content: space-between;
 
-// }
 .navi-list {
     display: flex;
     text-decoration: none;
     color: $font-color;
     font-size: 16px;
-    //font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 17px;
     margin: 0 5.6% 0 auto;
-    align-items: center;
-    overflow: auto;
+    //align-items: center;
+    //overflow: auto;
 }
 
 .navi-item {
@@ -87,8 +83,6 @@
     font-weight: 700;
     cursor: pointer;
 }
-
-
 
 .navi-item:hover  {
     color: $font-hover;
@@ -101,4 +95,7 @@
 //    right: 0;
 //}
 
+.header-burger {
+    display: none;
+}
 

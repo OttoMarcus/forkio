@@ -46,7 +46,7 @@
         text-decoration: none;
         color: $font-color;
         font-size: 16px;
-        //font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         line-height: 18px;
         justify-content: space-around;
@@ -57,11 +57,20 @@
         left: 10%;
     }
 
-    .oval-purple-button {
+    .buy {
         @include button;
-        width: 145px;
-        height: 38px;
-   
+        @include buyNow;
+    }
+
+    .download{
+        @include button;
+        @include download;
+    }
+
+    .buy:hover,
+    .download:hover {
+        background: $font-hover;
+        color: $font-color;
     }
 
     //----------------------- FORK-UP -----------------------------

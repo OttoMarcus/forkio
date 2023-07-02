@@ -12,6 +12,7 @@
 
     .header-menu {
         padding-top: 30px;
+        flex-direction: row;
     }
 
     .logo {
@@ -23,20 +24,9 @@
         width: 45%;
     }
 
-    .oval-purple-button {
+    .buy {
         @include button;
         @include buyNow;
-    }
-
-
-    .oval-purple-button:active,
-    .oval-purple-button:focus {
-    outline: none;
-    }
-
-    .oval-purple-button:hover {
-    background: $font-hover;
-    color: $font-color;
     }
 
     .download{
@@ -44,7 +34,11 @@
         @include download;
     }
 
-
+    .buy:hover,
+    .download:hover {
+    background: $font-hover;
+    color: $font-color;
+    }
 
     //----------------------- FORK-UP -----------------------------
     .fork-title{

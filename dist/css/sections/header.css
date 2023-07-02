@@ -12,6 +12,7 @@
     max-width: 1380px;
     width: 100%;
     min-height: 100px;
+    z-index: 2;
     position: relative;
 }
 
@@ -52,7 +53,7 @@
     display: inline-block;
     color: #8D81AC;
     font-size: 24px;
-    font-family: Lato, serif;
+    font-family: Lato, sans-serif;
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
@@ -63,11 +64,10 @@
     text-decoration: none;
     color: #8D81AC;
     font-size: 16px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     line-height: 17px;
     margin: 0 5.6% 0 auto;
-    align-items: center;
-    overflow: auto;
 }
 
 .navi-item {
@@ -80,4 +80,8 @@
 .navi-item:hover {
     color: #fff;
     transition: all 0.3s ease 0s;
+}
+
+.header-burger {
+    display: none;
 }

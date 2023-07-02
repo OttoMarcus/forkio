@@ -1,3 +1,5 @@
+@import "../components/mixins";
+@import "../sections/burger";
 @import "../components/variables";
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
@@ -23,29 +25,42 @@
     flex-direction: column;
   }
 
+  .buy {
+    @include button;
+    width: 120px;
+    height: 37px;
+  }
+
+  .download {
+    @include button;
+    width: 290px;
+    height: 45px;
+  }
+
 
   //----------------------- FORK-UP -----------------------------
   .fork-title{
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 42px;
-    margin: 153px 0 20px 0;
+    line-height: 48px;
+    margin: 160px 0 20px 0;
   }
 
   .fork-subtitle{
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 14px;
-    //font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
+    width: 230px;
   }
 
   .fork-version{
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    margin-bottom: 460px;
+    //margin-bottom: 460px;
   }
 
   //----------------------- REVOLUTIONARY -----------------------
