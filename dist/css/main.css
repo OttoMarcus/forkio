@@ -755,7 +755,6 @@ a.fork-version:hover {
     .here-is-what-you-get__paragraphs_container {
         width: 62rem;
         height: 70px;
-        background-color: red;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
