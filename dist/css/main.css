@@ -521,7 +521,7 @@ a.fork-version:hover {
     outline: none;
 }
 
-.revolutionary {
+.editor {
     width: 100%;
     height: 26em;
     display: flex;
@@ -542,7 +542,7 @@ a.fork-version:hover {
     line-height: 15px;
 }
 
-.revolutionary__title {
+.editor__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #635C73;
@@ -552,7 +552,7 @@ a.fork-version:hover {
     text-align: center;
 }
 
-.revolutionary__paragraph {
+.editor__paragraph {
     font-family: Lato, sans-serif;
     font-weight: 400;
     color: #323232;
@@ -563,7 +563,7 @@ a.fork-version:hover {
     text-align: center;
 }
 
-.revolutionary__btns {
+.editor__btns {
     width: 100%;
     height: 30%;
     position: relative;
@@ -582,7 +582,7 @@ a.fork-version:hover {
     left: 12%;
 }
 
-.revolutionary__btns_button:hover {
+.editor__btns_button:hover {
     border-color: #8D81AC;
 }
 
@@ -598,7 +598,7 @@ a.fork-version:hover {
     left: 33.33333%;
 }
 
-.revolutionary__btns_button {
+.editor__btns_button {
     width: 33.3333%;
     height: 30%;
     background-color: #F1F1F1;
@@ -615,7 +615,7 @@ a.fork-version:hover {
     padding: 0;
 }
 
-.revolutionary__btns_counter {
+.editor__btns_counter {
     width: 44%;
     height: 100%;
     background-color: #FFFFFF;
@@ -632,14 +632,15 @@ a.fork-version:hover {
     cursor: no-drop;
 }
 
-.here-is-what-you-get {
+.get {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 2%;
 }
 
-.here-is-what-you-get__title {
+.get__title {
     color: #8D81AC;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -648,15 +649,15 @@ a.fork-version:hover {
     margin-bottom: 20px;
 }
 
-.here-is-what-you-get__items img {
+.get__items img {
     margin-bottom: 15px;
 }
 
-#image1_here-is-what-you-get {
+#image1_get {
     margin-left: 30px;
 }
 
-.here-is-what-you-get__item_pargraph_1 {
+.get__item_pargraph_1 {
     margin-bottom: 15px;
     color: #323232;
     font-family: "Montserrat", sans-serif;
@@ -665,7 +666,7 @@ a.fork-version:hover {
     line-height: 16px;
 }
 
-.here-is-what-you-get__item_pargraph_2 {
+.get__item_pargraph_2 {
     margin-bottom: 30px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -673,35 +674,35 @@ a.fork-version:hover {
     line-height: 21px;
 }
 
-.here-is-what-you-get_big_image img {
+.get_big_image img {
     width: 100%;
     height: 100%;
 }
 
-.here-is-what-you-get_big_image img {
+.get_big_image img {
     width: 100%;
     height: 100%;
     margin-left: 7%;
 }
 
 @media (min-width: 768px) {
-    .revolutionary__title {
+    .editor__title {
         font-size: 42px;
         line-height: 42px;
     }
 
-    .revolutionary__paragraph {
+    .editor__paragraph {
         font-size: 21px;
         line-height: 32px;
     }
 
-    .revolutionary__btns {
+    .editor__btns {
         width: 90%;
         height: 25%;
         position: relative;
     }
 
-    .revolutionary__btns_button {
+    .editor__btns_button {
         width: 22.3333%;
         height: 41%;
     }
@@ -724,42 +725,42 @@ a.fork-version:hover {
         left: 73%;
     }
 
-    .here-is-what-you-get {
+    .get {
         text-align: left;
     }
 
-    .here-is-what-you-get__title {
+    .get__title {
         font-size: 42px;
         line-height: 44px;
     }
 
-    .here-is-what-you-get__items {
+    .get__items {
         width: 100%;
         height: 100%;
         padding: 2% 1%;
         display: flex;
     }
 
-    #image1_here-is-what-you-get {
+    #image1_get {
         margin-left: 0;
     }
 
-    .here-is-what-you-get__items img {
+    .get__items img {
         margin-bottom: 0;
     }
 
-    .here-is-what-you-get__image_container {
+    .get__image_container {
         width: 5rem;
         height: 70px;
         margin-right: 2%;
     }
 
-    .here-is-what-you-get__image_container img {
+    .get__image_container img {
         width: 70px;
         height: 70px;
     }
 
-    .here-is-what-you-get__paragraphs_container {
+    .get__paragraphs_container {
         width: 62rem;
         height: 70px;
         display: flex;
@@ -769,31 +770,31 @@ a.fork-version:hover {
 }
 
 @media (min-width: 1200px) {
-    .revolutionary {
+    .editor {
         width: 100%;
     }
 
-    .revolutionary__btns {
+    .editor__btns {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .revolutionary__title {
+    .editor__title {
         font-weight: 700;
         font-size: 54px;
         line-height: 54px;
         margin-bottom: 4%;
     }
 
-    .revolutionary__paragraph {
+    .editor__paragraph {
         font-weight: 400;
         font-size: 21px;
         line-height: 32px;
         margin-bottom: 4%;
     }
 
-    .here-is-what-you-get {
+    .get {
         padding: 4%;
         background-color: #F4F4F4;
         display: grid;
@@ -804,38 +805,38 @@ a.fork-version:hover {
         grid-template-areas: "p1 title" "p2 img" "p3 img" "p4 img";
     }
 
-    .here-is-what-you-get__title {
+    .get__title {
         font-weight: 700;
         font-size: 48px;
         line-height: 50px;
         grid-area: title;
     }
 
-    .here-is-what-you-get__items item1 {
+    .get__items item1 {
         grid-area: p1;
     }
 
-    .here-is-what-you-get__items item2 {
+    .get__items item2 {
         grid-area: p2;
     }
 
-    .here-is-what-you-get__items item3 {
+    .get__items item3 {
         grid-area: p3;
     }
 
-    .here-is-what-you-get__items item4 {
+    .get__items item4 {
         grid-area: p4;
     }
 
-    .here-is-what-you-get_big_image {
+    .get_big_image {
         grid-area: img;
     }
 
-    .here-is-what-you-get_big_image img {
+    .get_big_image img {
         margin: 0;
     }
 
-    .here-is-what-you-get__items {
+    .get__items {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -845,7 +846,7 @@ a.fork-version:hover {
         padding: 0;
     }
 
-    .here-is-what-you-get__image_container {
+    .get__image_container {
         margin-right: 5%;
     }
 }
