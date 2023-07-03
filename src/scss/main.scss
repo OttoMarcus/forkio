@@ -221,7 +221,7 @@ a.fork-version:hover{
     margin-bottom: 20px;
 }
 
-.get__items-img {
+.get__article-img {
     margin-bottom: 15px;
 }
 
@@ -229,7 +229,7 @@ a.fork-version:hover{
     margin-left: 30px;
 }
 
-.get__item_pargraph-1 {
+.get__article_pargraph-1 {
     margin-bottom: 15px;
     color: #323232;
     font-family: 'Montserrat', sans-serif;
@@ -238,7 +238,7 @@ a.fork-version:hover{
     line-height: 16px;
 }
 
-.get__item_pargraph-2 {
+.get__article_pargraph-2 {
     margin-bottom: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -307,7 +307,7 @@ a.fork-version:hover{
         line-height: 44px;
     }
 
-    .get__items {
+    .get__article {
         width: 100%;
         height: 100%;
         padding: 2% 1%;
@@ -318,7 +318,7 @@ a.fork-version:hover{
         margin-left: 0;
     }
     
-    .get__items-img {
+    .get__article-img {
         margin-bottom: 0;
     }
 
@@ -328,7 +328,7 @@ a.fork-version:hover{
         margin-right: 2%;
     }
 
-    .get__items-img {
+    .get__article-img {
         width: 70px;
         height: 70px;
     }
@@ -390,19 +390,19 @@ a.fork-version:hover{
         grid-area: title;
     }
 
-    .get__items item1 {
+    .get__article item1 {
         grid-area: p1; 
     }
 
-    .get__items item2 {
+    .get__article item2 {
         grid-area: p2; 
     }
 
-    .get__items item3 {
+    .get__article item3 {
         grid-area: p3; 
     }
 
-    .get__items item4 {
+    .get__article item4 {
         grid-area: p4; 
     }
 
@@ -414,7 +414,7 @@ a.fork-version:hover{
         margin: 0;
     }
     
-    .get__items {
+    .get__article {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 16px;
