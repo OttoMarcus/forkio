@@ -154,6 +154,10 @@ a.fork-version:hover{
     left: 12%;
 }
 
+.revolutionary__btns_button:hover {
+    border-color: #8D81AC;
+}
+
 .star {
     position: absolute;
     top: 20%;
@@ -197,6 +201,7 @@ a.fork-version:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
+    cursor: no-drop;
 }
 
 // ------------------------ HERE IS WHAT YOU GET section------------------------
