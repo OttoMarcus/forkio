@@ -1,4 +1,4 @@
-//@import "../components/variables";
+@import "../components/variables";
 //
 ////.navi-list {
 //  //position: absolute;
@@ -37,40 +37,43 @@
 //  margin-top: 88px;
 //}
 //
-//.header-burger {
-//  display: block;
-//  position: relative;
-//  z-index: 3;
-//}
-//
-//.header-burger span {
-//  position: absolute;
-//  z-index: 3;
-//  background-color: $font-hover;
-//  left: 13px;
-//  width: 26px;
-//  height: 3px;
-//  top: 17px;
-//  transition: all .3s ease 0s;
-//}
-//
-//.header-burger:before,
-//.header-burger:after {
-//  content: "";
-//  height: 3px;
-//  left: 13px;
-//  background-color: #fff;
-//  width: 26px;
-//  position: absolute;
-//  transition: all .3s ease 0s;
-//}
-//
-//.header-burger:before {
-//  top: 10px;
-//}
-//.header-burger:after {
-//  bottom: 12px;
-//}
+.header__burger {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 26px;
+  height: 24px;
+  background-color: blue;
+}
+
+.header__burger span {
+  position: absolute;
+  background-color: $font-hover;
+  right: 0;
+  width: 15px;
+  height: 3px;
+  top: 0;
+  border-radius: 5px;
+  transition: all .3s ease 0s;
+}
+
+.header__burger:before,
+.header__burger:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 26px;
+  border-radius: 5px;
+  background-color: $font-hover;
+  transition: all .3s ease 0s;
+}
+
+.header-burger:before {
+  top: 10px;
+}
+.header-burger:after {
+  bottom: 10px;
+}
 //
 //.header-burger.active span {
 //  transform: scale(0);
