@@ -8,16 +8,16 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 10;
+    //z-index: 10;
 }
 
 .header-body{
-    //display: flex;
+    position: relative;
     max-width: 1380px;
     width: 100%;
     min-height: 100px;
-    z-index: 2;
-    position: relative;
+    z-index: 29;
+
 }
 
 .header-menu {
@@ -74,7 +74,7 @@
     line-height: 17px;
     margin: 0 5.6% 0 auto;
     //align-items: center;
-    //overflow: auto;
+
 }
 
 .navi-item {
@@ -95,7 +95,8 @@
 //    right: 0;
 //}
 
-.header-burger {
+.header__burger {
     display: none;
 }
+
 

@@ -1,8 +1,8 @@
-@import "../components/mixins";
-@import "../sections/burger";
-@import "../components/variables";
-@media only screen and (min-width: 320px) and (max-width: 480px) {
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  @import "../components/mixins";
+  @import "../sections/burger";
+  @import "../components/variables";
   //----------------------- HEADER ------------------------------
  .container {
    padding: 0 10px;

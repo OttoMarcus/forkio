@@ -1,49 +1,65 @@
 @import "../components/variables";
-//
-////.navi-list {
-//  //position: absolute;
-//  //top: 0;
-//  //right: 0;
-//  //width: 60%;
-//  //flex-direction: column;
-//  //justify-content: start;
-//  //height: auto;
-//  //background-color: $burger-background;
-//  //padding: 3% 0;
-//  //border-radius: 7px;
-//  //z-index: -1;
-////}
-//
-//.header-menu.active {
-//  right: 0;
-//  transition: all .3s ease 0s;
-//}
-//.header-link:hover{
-//  margin-left: 6%;
-//  transition: all .2s ease 0s;
-//}
-//
-//li:hover {
-//  background-color:$font-hover;
-//  width: 100%;
-//}
-//
-//a.header-link:active {
-//  font-weight: 700;
-//}
-//
-//.wrapper {
-//  max-width: 320px;
-//  margin-top: 88px;
-//}
-//
+
+.navi-list {
+  position: absolute;
+  top: -340%;
+  right: 0;
+  width: 90%;
+  flex-direction: column;
+  justify-content: start;
+  height: auto;
+  background-color: $burger-background;
+  z-index: -6;
+  box-sizing: border-box;
+  transition: all .45s ease 0s;
+}
+
+.navi-list.active {
+  top: 100px;
+}
+
+.navi-item {
+  color: $font-hover;
+  font-size: 26px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 25px 36px;
+  text-align: start;
+  height: auto;
+  width: 100%;
+}
+
+.navi-list li {
+  width: 100%;
+  border: 1px solid $font-color;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.navi-list li:hover:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 53px;
+  left: 0;
+  background-color: $font-color;
+  transition: all .25s ease 0s;
+}
+
+.navi-item:hover {
+  color: $font-color;
+  transition: all .1s ease 0s
+}
+
 .header__burger {
   display: block;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   width: 26px;
-  height: 24px;
-  background-color: blue;
+  height: 28px;
+
 }
 
 .header__burger span {
@@ -68,21 +84,22 @@
   transition: all .3s ease 0s;
 }
 
-.header-burger:before {
+.header__burger:before {
   top: 10px;
 }
-.header-burger:after {
-  bottom: 10px;
+.header__burger:after {
+  top: 20px;
 }
-//
-//.header-burger.active span {
-//  transform: scale(0);
-//}
-//.header-burger.active:before {
-//  transform: rotate(45deg);
-//  top: 17px;
-//}
-//.header-burger.active:after {
-//  transform: rotate(-45deg);
-//  bottom: 19px;
-//}
+
+.header__burger.active span {
+  transform: scale(0);
+}
+.header__burger.active:before {
+  transform: rotate(45deg);
+  top: 13px;
+}
+
+.header__burger.active:after {
+  transform: rotate(-45deg);
+  top: 13px;
+}
