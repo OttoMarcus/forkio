@@ -6,6 +6,7 @@
 @import "media_query/mobile";
 @import "media_query/tablet";
 @import "media_query/desktop";
+@import "sections/talking-about.scss";
 
 .wrapper{
     max-width: 1380px;
@@ -185,6 +186,16 @@ font-family: Montserrat, sans-serif;
 }    
 
 // ----------------------- TALKING ABOUT section ----------------------
-
+.about-background {
+    background-image: url("../images/background/testmonials.png");
+    filter: brightness(150%);
+    width: 100%;
+    max-width: 1380px;
+    height: 769px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
 
 // ------------------------ SUBSCRIPTION section------------------------
