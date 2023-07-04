@@ -1,8 +1,9 @@
-@import "../components/mixins";
-@import "../sections/burger";
-@import "../components/variables";
-@media only screen and (min-width: 320px) and (max-width: 480px) {
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  @import "../components/mixins";
+  @import "../sections/burger";
+  @import "../components/variables";
+  
   //----------------------- HEADER ------------------------------
  .container {
    padding: 0 10px;
@@ -35,8 +36,15 @@
     @include button;
     width: 290px;
     height: 45px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
+  .buy:hover,
+  .download:hover {
+      background: $font-hover;
+      color: $font-color;
+  }
 
   //----------------------- FORK-UP -----------------------------
   .fork-title{
@@ -60,7 +68,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    //margin-bottom: 460px;
+  }
+
+  .download {
+    bottom: -23px;
   }
 
   //----------------------- REVOLUTIONARY -----------------------

@@ -8,18 +8,17 @@
 @import "media_query/mobile";
 @import "media_query/tablet";
 @import "media_query/desktop";
+@import "sections/talking-about.scss";
 
 .wrapper{
     max-width: 1380px;
     height: 100%;
     margin: 0 auto;
-    position: relative;
 }
 
 .container{
-     margin: 0 auto;
-     max-width: 1200px;
-
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 // -----------------------  MAIN ----------------------------------
@@ -28,7 +27,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
 
 // ------------------------ FORK APP section -------------------------
 .fork-background {
@@ -80,8 +78,10 @@ a.fork-version:hover{
 }
 
 .download {
-    position: absolute;
-    bottom: -31px;
+position: absolute;
+color: $font-hover;
+text-align: center;
+font-family: Montserrat, sans-serif;
 }
 
 .download:active,
@@ -104,8 +104,7 @@ a.fork-version:hover{
 }
 
 .unlimited {
-    margin: 50px 0 65px 0;
-
+    margin: 40px 0 60px 0;
     color: $font-version;
     text-align: center;
     font-size: 14px;
@@ -180,6 +179,7 @@ a.fork-version:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 20px;
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -205,7 +205,7 @@ a.fork-version:hover{
 }
 
 // ------------------------ HERE IS WHAT YOU GET section------------------------
-.get {  
+.get {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,7 +258,17 @@ a.fork-version:hover{
     margin-left: 7%;
 }
 // ----------------------- TALKING ABOUT section ----------------------
-
+.about-background {
+    background-image: url("../images/background/testmonials.png");
+    filter: brightness(150%);
+    width: 100%;
+    max-width: 1380px;
+    height: 769px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
 
 // ------------------------ SUBSCRIPTION section------------------------
 
@@ -302,7 +312,7 @@ a.fork-version:hover{
         bottom: 39%;
         left: 73%;
     }
- 
+
     .get {
         text-align: left;
     }
@@ -322,7 +332,7 @@ a.fork-version:hover{
     #image1_get {
         margin-left: 0;
     }
-    
+
     .get__items img {
         margin-bottom: 0;
     }
@@ -345,7 +355,7 @@ a.fork-version:hover{
         flex-direction: column;
         align-items: flex-start;
     }
-}   
+}
 
 @media (min-width: 1200px) {
 
@@ -358,7 +368,7 @@ a.fork-version:hover{
         align-items: center;
         justify-content: center;
     }
-    
+
     .editor__title {
         font-weight: 700;
         font-size: 54px;
@@ -380,7 +390,7 @@ a.fork-version:hover{
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(4, 1fr);
         column-gap: 2%;
-        grid-template-areas: 
+        grid-template-areas:
         "p1 title"
         "p2 img"
         "p3 img"
@@ -396,29 +406,29 @@ a.fork-version:hover{
     }
 
     .get__items item1 {
-        grid-area: p1; 
+        grid-area: p1;
     }
 
     .get__items item2 {
-        grid-area: p2; 
+        grid-area: p2;
     }
 
     .get__items item3 {
-        grid-area: p3; 
+        grid-area: p3;
     }
 
     .get__items item4 {
-        grid-area: p4; 
+        grid-area: p4;
     }
 
     .get_big_image {
-        grid-area: img; 
+        grid-area: img;
     }
 
     .get_big_image img {
         margin: 0;
     }
-    
+
     .get__items {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;

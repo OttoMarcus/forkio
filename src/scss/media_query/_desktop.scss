@@ -6,6 +6,7 @@
     .container {
         padding: 0 6.5%;
     }
+    
     .header-body {
         background-color: $back-header;
     }
@@ -59,6 +60,12 @@
         font-weight: 400;
         line-height: 16px;
         margin-bottom: 460px;
+    }
+
+    .download {
+        bottom: -31px;
+        font-size: 21px;
+        line-height: 23px;
     }
     //----------------------- REVOLUTIONARY -----------------------
     //----------------------- TALKING ABOUT -----------------------
