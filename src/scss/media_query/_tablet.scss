@@ -11,9 +11,7 @@
     {
         display: flex;
         justify-content: space-between;
-        //width: 100%;
         padding-top: 20px;
-
     }
 
     .logo {
@@ -26,15 +24,9 @@
 
     .header-body{
         width: 100%;
-        //height: 118px;
         align-items: start;
-        //justify-content: space-between;
         background-color:  $header-tablet-background;
         padding: 0 0 18px 0;
-        //z-index: 2;
-        //display: flex;
-        //flex-direction: row;
-
     }
 
     .header-menu {
@@ -72,10 +64,6 @@
         background: $font-hover;
         color: $font-color;
     }
-
-    //.header-burger {
-    //    display: none;
-    //}
 
     //----------------------- FORK-UP -----------------------------
     .fork-title{

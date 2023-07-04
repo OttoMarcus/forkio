@@ -86,6 +86,7 @@
 .header__burger:before {
   top: 10px;
 }
+
 .header__burger:after {
   top: 20px;
 }
@@ -93,6 +94,7 @@
 .header__burger.active span {
   transform: scale(0);
 }
+
 .header__burger.active:before {
   transform: rotate(45deg);
   top: 13px;

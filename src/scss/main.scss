@@ -16,9 +16,8 @@
 }
 
 .container{
-     margin: 0 auto;
-     max-width: 1200px;
-
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 // -----------------------  MAIN ----------------------------------
@@ -27,7 +26,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
 
 // ------------------------ FORK APP section -------------------------
 .fork-background {
@@ -176,9 +174,6 @@ a.fork-version:hover{
 }
 
 // ------------------------ HERE IS WHAT YOU GET section------------------------
-//.here-is-what-you-get {
-//    max-width: 1200px;
-//}
 
 .here-is-what-you-get__title {
     color: #8D81AC;
@@ -187,8 +182,6 @@ a.fork-version:hover{
     font-size: 32px;
     line-height: 37px;
 }    
-
-
 
 // ----------------------- TALKING ABOUT section ----------------------
 

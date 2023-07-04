@@ -17,7 +17,6 @@
     width: 100%;
     min-height: 100px;
     z-index: 2;
-
 }
 
 .header-menu {
@@ -60,9 +59,7 @@
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
-
 }
-
 
 .navi-list {
     display: flex;
@@ -73,8 +70,6 @@
     font-weight: 700;
     line-height: 17px;
     margin: 0 5.6% 0 auto;
-    //align-items: center;
-
 }
 
 .navi-item {
@@ -88,12 +83,6 @@
     color: $font-hover;
     transition: all .3s ease 0s;
 }
-
-//.buy {
-//    position: relative;
-//    top: 0;
-//    right: 0;
-//}
 
 .header__burger {
     display: none;
