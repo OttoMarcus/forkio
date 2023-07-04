@@ -9,8 +9,8 @@
   justify-content: start;
   height: auto;
   background-color: $burger-background;
-  box-sizing: border-box;
   transition: all .45s ease 0s;
+  overflow: auto;
 }
 
 .navi-list.active {
@@ -31,7 +31,7 @@
 
 .navi-list li {
   width: 100%;
-  border: 1px solid $font-color;
+  border-bottom: 4px solid $burger-border;
   height: 80px;
   display: flex;
   align-items: center;
@@ -103,4 +103,8 @@
 .header__burger.active:after {
   transform: rotate(-45deg);
   top: 13px;
+}
+
+body.lock {
+  overflow: hidden;
 }

@@ -1,9 +1,7 @@
 @import "components/mixins";
 @import "components/variables";
 @import "components/reset";
-
 @import "sections/header";
-
 @import "media_query/under320";
 @import "media_query/mobile";
 @import "media_query/tablet";
@@ -77,7 +75,13 @@ a.fork-version:hover{
 }
 
 .download {
-    position: absolute;
+position: absolute;
+color: $font-hover;
+text-align: center;
+font-size: 21px;
+font-family: Montserrat, sans-serif;
+font-weight: 700;
+line-height: 23px;
 }
 
 .download:active,

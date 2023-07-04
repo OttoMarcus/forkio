@@ -164,8 +164,8 @@ a {
         justify-content: start;
         height: auto;
         background-color: #333;
-        box-sizing: border-box;
         transition: all 0.45s ease 0s;
+        overflow: auto;
     }
 
     .navi-list.active {
@@ -186,7 +186,7 @@ a {
 
     .navi-list li {
         width: 100%;
-        border: 1px solid #8D81AC;
+        border-bottom: 4px solid #3B3B3B;
         height: 80px;
         display: flex;
         align-items: center;
@@ -257,6 +257,10 @@ a {
     .header__burger.active:after {
         transform: rotate(-45deg);
         top: 13px;
+    }
+
+    body.lock {
+        overflow: hidden;
     }
 
     .container {
@@ -632,6 +636,12 @@ a.fork-version:hover {
 
 .download {
     position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 23px;
 }
 
 .download:active,

@@ -3,6 +3,7 @@
   @import "../components/mixins";
   @import "../sections/burger";
   @import "../components/variables";
+  
   //----------------------- HEADER ------------------------------
  .container {
    padding: 0 10px;
@@ -43,7 +44,6 @@
       color: $font-color;
   }
 
-
   //----------------------- FORK-UP -----------------------------
   .fork-title{
     font-size: 48px;
@@ -73,8 +73,6 @@
   }
 
   //----------------------- REVOLUTIONARY -----------------------
-
-  
   //----------------------- TALKING ABOUT -----------------------
   //----------------------- SUBSCRIPTION ------------------------
 
