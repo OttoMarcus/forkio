@@ -58,6 +58,9 @@
     .download{
         @include button;
         @include download;
+        bottom: -31px;
+        font-size: 21px;
+        line-height: 23px;
     }
 
     .buy:hover,
@@ -87,9 +90,7 @@
         margin-bottom: 460px;
     }
 
-    .download {
-        bottom: -31px;
-    }
+
     //----------------------- REVOLUTIONARY -----------------------
     //----------------------- TALKING ABOUT -----------------------
     //----------------------- SUBSCRIPTION ------------------------

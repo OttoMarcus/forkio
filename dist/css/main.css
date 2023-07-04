@@ -322,6 +322,8 @@ a {
         transition: all 0.2s ease 0s;
         width: 290px;
         height: 45px;
+        font-size: 18px;
+        line-height: 20px;
     }
 
     .buy:hover,
@@ -442,6 +444,9 @@ a {
         transition: all 0.2s ease 0s;
         width: 390px;
         height: 62px;
+        bottom: -31px;
+        font-size: 21px;
+        line-height: 23px;
     }
 
     .buy:hover,
@@ -468,10 +473,6 @@ a {
         font-weight: 400;
         line-height: 14px;
         margin-bottom: 460px;
-    }
-
-    .download {
-        bottom: -31px;
     }
 }
 
@@ -566,6 +567,8 @@ a {
 
     .download {
         bottom: -31px;
+        font-size: 21px;
+        line-height: 23px;
     }
 }
 
@@ -638,10 +641,7 @@ a.fork-version:hover {
     position: absolute;
     color: #fff;
     text-align: center;
-    font-size: 21px;
     font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    line-height: 23px;
 }
 
 .download:active,
