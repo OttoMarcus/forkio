@@ -37,6 +37,12 @@
     height: 45px;
   }
 
+  .buy:hover,
+  .download:hover {
+      background: $font-hover;
+      color: $font-color;
+  }
+
 
   //----------------------- FORK-UP -----------------------------
   .fork-title{
@@ -63,7 +69,17 @@
     //margin-bottom: 460px;
   }
 
+  .download {
+    bottom: -23px;
+  }
+  
+  // .fork-background {
+  //   height: 750px;
+  // }
+
   //----------------------- REVOLUTIONARY -----------------------
+
+  
   //----------------------- TALKING ABOUT -----------------------
   //----------------------- SUBSCRIPTION ------------------------
 

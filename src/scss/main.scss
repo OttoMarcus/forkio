@@ -36,7 +36,6 @@
     max-width: 1380px;
     height: 800px;
     top: 0;
-    //left: 0;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +80,6 @@ a.fork-version:hover{
 
 .download {
     position: absolute;
-    bottom: -31px;
 }
 
 .download:active,
@@ -104,8 +102,7 @@ a.fork-version:hover{
 }
 
 .unlimited {
-    margin: 50px 0 65px 0;
-
+    margin: 40px 0 60px 0;
     color: $font-version;
     text-align: center;
     font-size: 14px;
