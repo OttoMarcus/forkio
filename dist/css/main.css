@@ -14,6 +14,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
 }
 
@@ -62,11 +64,11 @@ a {
 }
 
 .header-body {
+    position: relative;
     max-width: 1380px;
     width: 100%;
     min-height: 100px;
     z-index: 2;
-    position: relative;
 }
 
 .header-menu {
@@ -815,6 +817,17 @@ a.fork-version:hover {
     margin-left: 7%;
 }
 
+.about-background {
+    background-image: url("../images/background/testmonials.png");
+    width: 100%;
+    max-width: 1380px;
+    height: 769px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 @media (min-width: 768px) {
     .editor__title {
         font-size: 42px;
@@ -979,16 +992,4 @@ a.fork-version:hover {
     .get__image_container {
         margin-right: 5%;
     }
-}
-
-.about-background {
-    background-image: url("../images/background/testmonials.png");
-    filter: brightness(150%);
-    width: 100%;
-    max-width: 1380px;
-    height: 769px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
