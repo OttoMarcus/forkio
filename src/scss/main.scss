@@ -258,19 +258,22 @@ font-family: Montserrat, sans-serif;
     margin-left: 7%;
 }
 // ----------------------- TALKING ABOUT section ----------------------
-.about-background {
-    background-image: url("../images/background/testmonials.png");
-    filter: brightness(150%);
-    width: 100%;
-    max-width: 1380px;
-    height: 769px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    }
+
+
 
 // ------------------------ SUBSCRIPTION section------------------------
+// .subscrition-background {
+//     background-image: url("../images/background/subscp.png");
+//     width: 100%;
+//     max-width: 1380px;
+//     height: 100%;
+//     top: 900px;
+//     position: relative;
+//     z-index: -1;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+// }
 
 @media (min-width: 768px) {
 
