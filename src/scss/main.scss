@@ -1,7 +1,9 @@
 @import "components/mixins";
 @import "components/variables";
 @import "components/reset";
+
 @import "sections/header";
+
 @import "media_query/under320";
 @import "media_query/mobile";
 @import "media_query/tablet";
@@ -90,9 +92,9 @@ font-family: Montserrat, sans-serif;
 }
 
 // ------------------------ REVOLUTIONARY section  --------------------
-.revolutionary {
+.editor {
     width: 100%;
-    height: 20em;
+    height: 26em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -111,7 +113,7 @@ font-family: Montserrat, sans-serif;
     line-height: 15px;
 }
 
-.revolutionary__title {
+.editor__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #635C73;
@@ -121,7 +123,7 @@ font-family: Montserrat, sans-serif;
     text-align: center;
 }
 
-.revolutionary__paragraph {
+.editor__paragraph {
     font-family: Lato, sans-serif;
     font-weight: 400;
     color: #323232;
@@ -129,18 +131,47 @@ font-family: Montserrat, sans-serif;
     line-height: 20px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
-.revolutionary__btns {
-    width: 27em;
-    height: 26px;
+.editor__btns {
+    width: 100%;
+    height: 30%;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
-.revolutionary__btns_button {
-    width: 80px;
-    height: 26px;
+.fa {
+    margin-left: 6%;
+}
+
+.watch {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+
+.editor__btns_button:hover {
+    border-color: #8D81AC;
+}
+
+.star {
+    position: absolute;
+    top: 20%;
+    right: 12%;
+}
+
+.fork {
+    position: absolute;
+    bottom: 15%;
+    left: 33.33333%;
+}
+
+.editor__btns_button {
+    width: 33.3333%;
+    height: 30%;
     background-color: #F1F1F1;
     border-radius: 3px;
     border: 1px solid #D5D5D5;
@@ -152,12 +183,12 @@ font-family: Montserrat, sans-serif;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    padding: 0;
 }
 
-.revolutionary__btns_counter {
-    width: 45px;
+.editor__btns_counter {
+    width: 44%;
     height: 100%;
     background-color: #FFFFFF;
     border-radius: 3px;
@@ -166,36 +197,252 @@ font-family: Montserrat, sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 20px;
-    position: absolute;
-    top: -1px;
-    right: -47px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    cursor: no-drop;
 }
 
 // ------------------------ HERE IS WHAT YOU GET section------------------------
+.get {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2%;
+}
 
-.here-is-what-you-get__title {
+.get__title {
     color: #8D81AC;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 37px;
-}    
+    margin-bottom: 20px;
+}
 
-// ----------------------- TALKING ABOUT section ----------------------
-.about-background {
-    background-image: url("../images/background/testmonials.png");
-    // filter: brightness(150%);
+.get__items img {
+    margin-bottom: 15px;
+}
+
+#image1_get {
+    margin-left: 30px;
+}
+
+.get__item_pargraph_1 {
+    margin-bottom: 15px;
+    color: #323232;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.get__item_pargraph_2 {
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.get_big_image img {
     width: 100%;
-    max-width: 1380px;
-    height: 769px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    }
+    height: 100%;
+}
+
+.get_big_image img {
+    width: 100%;
+    height: 100%;
+    margin-left: 7%;
+}
+// ----------------------- TALKING ABOUT section ----------------------
+
+
 
 // ------------------------ SUBSCRIPTION section------------------------
+// .subscrition-background {
+//     background-image: url("../images/background/subscp.png");
+//     width: 100%;
+//     max-width: 1380px;
+//     height: 100%;
+//     top: 900px;
+//     position: relative;
+//     z-index: -1;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+// }
+
+@media (min-width: 768px) {
+
+    .editor__title {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .editor__paragraph {
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    .editor__btns {
+        width: 90%;
+        height: 25%;
+        position: relative;
+    }
+
+    .editor__btns_button {
+        width: 22.3333%;
+        height: 41%;
+    }
+
+    .watch {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+
+    .star {
+        position: absolute;
+        top: 20%;
+        right: 38%;
+    }
+
+    .fork {
+        position: absolute;
+        bottom: 39%;
+        left: 73%;
+    }
+
+    .get {
+        text-align: left;
+    }
+
+    .get__title {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    .get__items {
+        width: 100%;
+        height: 100%;
+        padding: 2% 1%;
+        display: flex;
+    }
+
+    #image1_get {
+        margin-left: 0;
+    }
+
+    .get__items img {
+        margin-bottom: 0;
+    }
+
+    .get__image_container {
+        width: 5rem;
+        height: 70px;
+        margin-right: 2%;
+    }
+
+    .get__image_container img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .get__paragraphs_container {
+        width: 62rem;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .editor {
+        width: 100%;
+    }
+
+    .editor__btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .editor__title {
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 54px;
+        margin-bottom: 4%;
+    }
+
+    .editor__paragraph {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 4%;
+    }
+
+    .get {
+        padding: 4%;
+        background-color: #F4F4F4;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 2%;
+        grid-template-areas:
+        "p1 title"
+        "p2 img"
+        "p3 img"
+        "p4 img"
+        ;
+    }
+
+    .get__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        grid-area: title;
+    }
+
+    .get__items item1 {
+        grid-area: p1;
+    }
+
+    .get__items item2 {
+        grid-area: p2;
+    }
+
+    .get__items item3 {
+        grid-area: p3;
+    }
+
+    .get__items item4 {
+        grid-area: p4;
+    }
+
+    .get_big_image {
+        grid-area: img;
+    }
+
+    .get_big_image img {
+        margin: 0;
+    }
+
+    .get__items {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .get__image_container {
+        margin-right: 5%;
+    }
+}
