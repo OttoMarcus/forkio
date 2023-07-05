@@ -1,0 +1,96 @@
+@import "../components/variables";
+
+.talking-background {
+    background-image: url("../images/background/testmonials.png");
+    width: 100%;
+    max-width: 1380px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.talking-title {
+    color: $font-hover;
+    text-align: center;
+    font-size: 42px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 44px;
+    grid-area: 1/1/2/4;
+}
+
+// .smashing {
+//     grid-area: "smash";
+// }
+
+// .codrups {
+//     grid-area: "codrups";
+// }
+
+// .w {
+//     grid-area: "w";
+// }
+
+// .pixel {
+//     grid-area: "pixel";
+// }
+
+// .creative-bloq {
+//     grid-area: "creative";
+// }
+
+// .tnw {
+//     grid-area: "tnw";
+// }
+
+// .some-paragraph {
+//     grid-area: "paragraph";
+// }
+
+.talking-description {
+    color: $font-hover;
+    text-align: center;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    min-width: 300px;
+}
+
+.some-paragraph {
+    color: $talking-paragraph;
+    text-align: center;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    grid-area: 4/1/5/4;
+}
+
+.talking-container {
+    border: solid 2px #000;
+    display: grid;
+    box-sizing: border-box;
+    // width: 100%;
+    min-height: 700px;
+    height: 100%;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 0;
+    // grid-gap: 50px;
+
+    
+}
+
+.talking-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+//     width: 80%;
+}
