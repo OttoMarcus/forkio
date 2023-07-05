@@ -122,7 +122,7 @@ a {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     line-height: 17px;
-    margin: 0 5.6% 0 auto;
+    margin: 0 5% 0 auto;
 }
 
 .navi-item {
@@ -359,11 +359,15 @@ a {
     .download {
         bottom: -23px;
     }
+
+    .some-paragraph {
+        margin-bottom: 36px;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 992px) {
     .container {
-        padding: 0 20px;
+        padding: 0 3.5%;
     }
 
     .header-menu {
@@ -475,11 +479,15 @@ a {
         line-height: 14px;
         margin-bottom: 460px;
     }
+
+    .some-paragraph {
+        margin-bottom: 110px;
+    }
 }
 
 @media only screen and (min-width: 993px) {
     .container {
-        padding: 0 6.5%;
+        padding: 0 3.5%;
     }
 
     .header-body {
@@ -571,13 +579,17 @@ a {
         font-size: 21px;
         line-height: 23px;
     }
+
+    .some-paragraph {
+        margin-bottom: 132px;
+    }
 }
 
 .talking-background {
     background-image: url("../images/background/testmonials.png");
     width: 100%;
     max-width: 1380px;
-    height: 100%;
+    height: 800px;
     position: absolute;
     z-index: -1;
     background-repeat: no-repeat;
@@ -592,18 +604,18 @@ a {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     line-height: 44px;
-    grid-area: 1/1/2/4;
+    margin: 100px 0 75px 0;
 }
 
 .talking-description {
     color: #fff;
-    text-align: center;
     font-size: 16px;
     font-family: Lato, sans-serif;
     font-style: italic;
     font-weight: 700;
     line-height: 24px;
-    min-width: 300px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .some-paragraph {
@@ -613,25 +625,39 @@ a {
     font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 21px;
-    grid-area: 4/1/5/4;
+    max-width: 887px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.some-paragraph:after {
+    content: "";
+    width: 80%;
+    left: 10%;
+    bottom: -18px;
+    height: 2px;
+    background-color: #645766;
+    position: absolute;
 }
 
 .talking-container {
-    border: solid 2px #000;
     display: grid;
     box-sizing: border-box;
-    min-height: 700px;
+    width: 100%;
+    min-height: 400px;
     height: 100%;
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     padding: 0;
+    grid-gap: 80px;
+    margin-bottom: 110px;
 }
 
 .talking-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
 }
 
 .wrapper {

@@ -1,9 +1,7 @@
 @import "components/mixins";
 @import "components/variables";
 @import "components/reset";
-
 @import "sections/header";
-
 @import "media_query/under320";
 @import "media_query/mobile";
 @import "media_query/tablet";
@@ -19,6 +17,7 @@
 .container{
     margin: 0 auto;
     max-width: 1200px;
+    //padding: 0 3.5%;
 }
 
 // -----------------------  MAIN ----------------------------------
