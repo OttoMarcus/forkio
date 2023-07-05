@@ -14,8 +14,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -137,7 +135,7 @@ a {
     transition: all 0.3s ease 0s;
 }
 
-.header-burger {
+.header__burger {
     display: none;
 }
 
@@ -155,6 +153,115 @@ a {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .navi-list {
+        position: absolute;
+        top: 100px;
+        right: -100%;
+        width: 90%;
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+        background-color: #333;
+        transition: all 0.45s ease 0s;
+        overflow: auto;
+    }
+
+    .navi-list.active {
+        right: 0;
+    }
+
+    .navi-item {
+        color: #fff;
+        font-size: 26px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 25px 36px;
+        text-align: start;
+        height: auto;
+        width: 100%;
+    }
+
+    .navi-list li {
+        width: 100%;
+        border-bottom: 4px solid #3B3B3B;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navi-list li:hover:before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 53px;
+        left: 0;
+        background-color: #8D81AC;
+        transition: all 0.25s ease 0s;
+    }
+
+    .navi-item:hover {
+        color: #8D81AC;
+        transition: all 0.1s ease 0s;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 26px;
+        height: 28px;
+        cursor: pointer;
+    }
+
+    .header__burger span {
+        position: absolute;
+        background-color: #fff;
+        right: 0;
+        width: 15px;
+        height: 3px;
+        top: 0;
+        border-radius: 5px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__burger:before,
+  .header__burger:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 26px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__burger:before {
+        top: 10px;
+    }
+
+    .header__burger:after {
+        top: 20px;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 13px;
+    }
+
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        top: 13px;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+
     .container {
         padding: 0 10px;
     }
@@ -214,6 +321,14 @@ a {
         transition: all 0.2s ease 0s;
         width: 290px;
         height: 45px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .buy:hover,
+  .download:hover {
+        background: #fff;
+        color: #8D81AC;
     }
 
     .fork-title {
@@ -237,6 +352,10 @@ a {
         font-size: 14px;
         font-weight: 400;
         line-height: 14px;
+    }
+
+    .download {
+        bottom: -23px;
     }
 }
 
@@ -324,6 +443,9 @@ a {
         transition: all 0.2s ease 0s;
         width: 390px;
         height: 62px;
+        bottom: -31px;
+        font-size: 21px;
+        line-height: 23px;
     }
 
     .buy:hover,
@@ -441,13 +563,18 @@ a {
         line-height: 16px;
         margin-bottom: 460px;
     }
+
+    .download {
+        bottom: -31px;
+        font-size: 21px;
+        line-height: 23px;
+    }
 }
 
 .wrapper {
     max-width: 1380px;
     height: 100%;
     margin: 0 auto;
-    position: relative;
 }
 
 .container {
@@ -511,7 +638,9 @@ a.fork-version:hover {
 
 .download {
     position: absolute;
-    bottom: -31px;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
 }
 
 .download:active,
@@ -533,7 +662,7 @@ a.fork-version:hover {
 }
 
 .unlimited {
-    margin: 50px 0 65px 0;
+    margin: 40px 0 60px 0;
     color: #848E97;
     text-align: center;
     font-size: 14px;
@@ -608,6 +737,7 @@ a.fork-version:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 20px;
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -844,4 +974,16 @@ a.fork-version:hover {
     .get__image-container {
         margin-right: 5%;
     }
+}
+
+.about-background {
+    background-image: url("../images/background/testmonials.png");
+    filter: brightness(150%);
+    width: 100%;
+    max-width: 1380px;
+    height: 769px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
