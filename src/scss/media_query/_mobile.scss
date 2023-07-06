@@ -77,8 +77,19 @@
   //----------------------- REVOLUTIONARY -----------------------
   //----------------------- TALKING ABOUT -----------------------
   .some-paragraph {
-    margin-bottom: 36px;
+    margin: 0 auto 130px auto;
   }
+ 
+
+  .talking-container {
+   grid-gap: 60px;
+  }
+
+  .talking-item {
+    max-width: 300px;
+  }
+
+
   //----------------------- SUBSCRIPTION ------------------------
 
 }

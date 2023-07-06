@@ -1,12 +1,13 @@
 @import "../components/variables";
 
-.talking-background {
+.talking-about {
     background-image: url("../images/background/testmonials.png");
     width: 100%;
     max-width: 1380px;
-    height: 800px;
-    position: absolute;
-    z-index: -1;
+    min-height: 800px;
+    height: 100%;
+    // position: absolute;
+    // z-index: -1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,34 +22,6 @@
     line-height: 44px;
     margin: 100px 0 75px 0;
 }
-
- //.smashing {
- //    grid-area: "smash";
- //}
-
-// .codrups {
-//     grid-area: "codrups";
-// }
-
-// .w {
-//     grid-area: "w";
-// }
-
-// .pixel {
-//     grid-area: "pixel";
-// }
-
-// .creative-bloq {
-//     grid-area: "creative";
-// }
-
-// .tnw {
-//     grid-area: "tnw";
-// }
-
-// .some-paragraph {
-//     grid-area: "paragraph";
-// }
 
 .talking-description {
     color: $font-hover;
@@ -72,7 +45,7 @@
     font-weight: 400;
     line-height: 21px;
     max-width: 887px;
-    margin: 0 auto;
+    padding: 3.5%;
     position: relative;
 }
 
@@ -80,7 +53,7 @@
     content: "";
     width: 80%;
     left: calc(50% - (80%/2));
-    bottom: -18px;
+    bottom: -10px;
     height: 2px;
     background-color: #645766;
     position: absolute;
@@ -89,21 +62,18 @@
 .talking-container {
     display: grid;
     box-sizing: border-box;
-     width: 100%;
+    width: 100%;
     min-height: 400px;
     height: 100%;
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    padding: 0;
     grid-gap: 80px;
     margin-bottom: 110px;
-    
 }
 
 .talking-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    //margin: auto;
+    justify-self: center;
 }
