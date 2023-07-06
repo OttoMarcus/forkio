@@ -26,3 +26,13 @@ transition: all .2s ease 0s;
     width: 390px;
     height: 62px;
 }
+
+@mixin montserrat700 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@mixin montserrat400 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}

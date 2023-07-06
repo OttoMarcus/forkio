@@ -14,6 +14,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
 }
 
@@ -62,11 +64,11 @@ a {
 }
 
 .header-body {
+    position: relative;
     max-width: 1380px;
     width: 100%;
     min-height: 100px;
     z-index: 2;
-    position: relative;
 }
 
 .header-menu {
@@ -571,6 +573,67 @@ a {
     }
 }
 
+.talking-background {
+    background-image: url("../images/background/testmonials.png");
+    width: 100%;
+    max-width: 1380px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.talking-title {
+    color: #fff;
+    text-align: center;
+    font-size: 42px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 44px;
+    grid-area: 1/1/2/4;
+}
+
+.talking-description {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    min-width: 300px;
+}
+
+.some-paragraph {
+    color: #A291A5;
+    text-align: center;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    grid-area: 4/1/5/4;
+}
+
+.talking-container {
+    border: solid 2px #000;
+    display: grid;
+    box-sizing: border-box;
+    min-height: 700px;
+    height: 100%;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 0;
+}
+
+.talking-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .wrapper {
     max-width: 1380px;
     height: 100%;
@@ -692,74 +755,62 @@ a.fork-version:hover {
     text-align: center;
 }
 
-.editor__btns {
+.editor__buttons {
     width: 100%;
-    height: 30%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fa {
-    margin-left: 6%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: ". . . . . . . . . . . " "w w w w w . s s s s s" ". . . f f f f f . . ." ". . . . . . . . . . . ";
 }
 
 .watch {
-    position: absolute;
-    top: 20%;
-    left: 12%;
-}
-
-.editor__btns-button:hover {
-    border-color: #8D81AC;
+    grid-area: w;
 }
 
 .star {
-    position: absolute;
-    top: 20%;
-    right: 12%;
+    grid-area: s;
 }
 
 .fork {
-    position: absolute;
-    bottom: 15%;
-    left: 33.33333%;
+    grid-area: f;
 }
 
-.editor__btns-button {
-    width: 33.3333%;
-    height: 30%;
-    background-color: #F1F1F1;
-    border-radius: 3px;
-    border: 1px solid #D5D5D5;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-}
-
-.editor__btns-counter {
-    width: 44%;
-    height: 100%;
-    background-color: #FFFFFF;
-    border-radius: 3px;
-    border: 1px solid #D5D5D5;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+.editor__buttons_button-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.editor__buttons-item {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #F5F5F5;
+    border: 2px solid #D5D5D5;
+    border-radius: 4px;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editor__buttons_counter {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 15px;
+    width: 50px;
+    height: 30px;
     text-align: center;
-    cursor: no-drop;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 2px solid #D5D5D5;
+    border-radius: 4px;
 }
 
 .get {
@@ -811,7 +862,6 @@ a.fork-version:hover {
 
 .about-background {
     background-image: url("../images/background/testmonials.png");
-    filter: brightness(150%);
     width: 100%;
     max-width: 1380px;
     height: 769px;
@@ -852,11 +902,10 @@ a.fork-version:hover {
     justify-content: space-between;
 }
 
-.subscrition__block:hover {
+.sub-block3 {
     width: 299px;
     height: 560px;
     background-color: #473249;
-    transition: 0.55s;
 }
 
 .subscrition__block-title {
@@ -960,33 +1009,14 @@ a.fork-version:hover {
         line-height: 32px;
     }
 
-    .editor__btns {
-        width: 90%;
-        height: 25%;
-        position: relative;
+    .editor__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .editor__btns-button {
-        width: 22.3333%;
-        height: 41%;
-    }
-
-    .watch {
-        position: absolute;
-        top: 20%;
-        left: 5%;
-    }
-
-    .star {
-        position: absolute;
-        top: 20%;
-        right: 38%;
-    }
-
-    .fork {
-        position: absolute;
-        bottom: 39%;
-        left: 73%;
+    .editor__buttons_button-wrapper {
+        margin-right: 30px;
     }
 
     .get {
@@ -1075,12 +1105,6 @@ a.fork-version:hover {
 @media (min-width: 1200px) {
     .editor {
         width: 100%;
-    }
-
-    .editor__btns {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .editor__title {
