@@ -255,7 +255,6 @@ font-family: Montserrat, sans-serif;
 // ----------------------- TALKING ABOUT section ----------------------
 .about-background {
     background-image: url("../images/background/testmonials.png");
-    filter: brightness(150%);
     width: 100%;
     max-width: 1380px;
     height: 769px;
@@ -523,7 +522,6 @@ font-family: Montserrat, sans-serif;
 }
 
 @media (min-width: 1200px) {
-
     .editor {
         width: 100%;
     }
