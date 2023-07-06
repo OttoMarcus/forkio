@@ -361,11 +361,12 @@ a {
     }
 
     .some-paragraph {
-        margin: 0 auto 130px auto;
+        margin: 36px auto 130px auto;
     }
 
     .talking-container {
         grid-gap: 60px;
+        margin-bottom: 36px;
     }
 
     .talking-item {
@@ -593,7 +594,7 @@ a {
     }
 
     .some-paragraph {
-        margin: 118px auto 130px auto;
+        margin: 118px auto 108px auto;
     }
 }
 
@@ -601,11 +602,23 @@ a {
     background-image: url("../images/background/testmonials.png");
     width: 100%;
     max-width: 1380px;
-    min-height: 800px;
+    min-height: 769px;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.talking-about:after {
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: -18px;
+    height: 50px;
+    background-color: #4B3B4E;
+    position: absolute;
+    z-index: -2;
 }
 
 .talking-title {
@@ -615,7 +628,7 @@ a {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     line-height: 44px;
-    margin: 100px 0 75px 0;
+    margin: 108px 0 80px 0;
 }
 
 .talking-description {
@@ -637,7 +650,7 @@ a {
     font-weight: 400;
     line-height: 21px;
     max-width: 887px;
-    padding: 3.5%;
+    padding: 0 3.5%;
     position: relative;
 }
 
@@ -645,7 +658,7 @@ a {
     content: "";
     width: 80%;
     left: 10%;
-    bottom: -10px;
+    bottom: -18px;
     height: 2px;
     background-color: #645766;
     position: absolute;
@@ -906,17 +919,6 @@ a.fork-version:hover {
 .get__image-img {
     width: 100%;
     height: 100%;
-}
-
-.about-background {
-    background-image: url("../images/background/testmonials.png");
-    width: 100%;
-    max-width: 1380px;
-    height: 769px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .subscrition {
