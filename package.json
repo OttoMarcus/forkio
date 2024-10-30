@@ -40,10 +40,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/IvanUA/step_project_2_forkio.git"
+    "url": "https://github.com/OttoMarcus/forkio.github.io.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/IvanUA/step_project_2_forkio/issues"
+    "url": "https://github.com/OttoMarcus/forkio.github.io.git"
   },
-  "homepage": "https://gitlab.com/IvanUA/step_project_2_forkio#readme"
+  "homepage": ""
 }
